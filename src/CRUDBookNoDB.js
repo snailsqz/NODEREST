@@ -55,7 +55,7 @@ app.delete("/books/:id", (req, res) => {
   if (!book) res.status(404).send("Book not found");
   const index = books.indexOf(book);
   books.splice(index, 1);
-  res.send(book);
+  res.send(boo - k);
 });
 
 const port = process.env.PORT || 3000;
