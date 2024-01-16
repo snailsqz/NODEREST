@@ -1,0 +1,1 @@
+console.log(digitalClock(61201));
