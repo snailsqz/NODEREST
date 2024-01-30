@@ -19,7 +19,7 @@ app.get("/books", (req, res) => {
   });
 });
 
-// app.get("/books/:title", (req, res) => {
+// app.get("/books/t/:title", (req, res) => {
 //   db.all(
 //     "SELECT * FROM books WHERE title = ?",
 //     req.params.title,
