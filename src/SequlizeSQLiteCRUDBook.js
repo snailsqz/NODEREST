@@ -6,7 +6,7 @@ app.use(express.json());
 
 const sequelize = new Sequelize("database", "username", "password", {
   host: "localhost",
-  dialect: "sqlite",
+  dialect: "sqlite", //choose sql to talk with
   storage: "./Database/SQBook.sqlite",
 });
 
