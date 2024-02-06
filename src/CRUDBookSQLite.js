@@ -19,6 +19,19 @@ app.get("/books", (req, res) => {
   });
 });
 
+// app.get("/books/t/:title", (req, res) => {
+//   db.all(
+//     "SELECT * FROM books WHERE title = ?",
+//     req.params.title,
+//     (err, row) => {
+//       if (err) res.status(500).send(err);
+//       else {
+//         res.json(row);
+//       }
+//     }
+//   );
+// });
+
 app.get("/books/:id", (req, res) => {
   db.get("SELECT * FROM books WHERE id = ?", req.params.id, (err, row) => {
     if (err) res.status(500).send(err);

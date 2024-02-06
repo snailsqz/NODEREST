@@ -26,10 +26,10 @@ const Book = sequelize.define("book", {
   },
 });
 
-sequelize.sync();
+sequelize.sync(); //if table not exist create
 
 app.get("/books", (req, res) => {
-  Book.findAll()
+  Book.findAll() //select * from
     .then((books) => {
       res.json(books);
     })
