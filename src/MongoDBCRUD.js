@@ -2,10 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-mongoose.connect("mongodb://admin:XDOkce24032@", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb://admin:XDOkce24032@node58258-pawee-noderest1.proen.app.ruk-com.cloud:11773",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const Book = mongoose.model("Book", {
   id: {
