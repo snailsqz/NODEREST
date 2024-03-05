@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 mongoose.connect(
-  "mongodb://@node58258-pawee-noderest1.proen.app.ruk-com.cloud",
+  "mongodb://admin:XDOkce24032@node58258-pawee-noderest1.proen.app.ruk-com.cloud",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
